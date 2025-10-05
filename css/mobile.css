@@ -1,0 +1,75 @@
+@media (width <= 500px) {
+  /* banner */
+  .banner {
+    position: relative;
+    background-size: cover;
+  }
+  /* navbar */
+  .navbar .container {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .nav-item {
+    border: 0;
+    width: 100%;
+  }
+  .nav-box {
+    justify-content: start;
+  }
+  /* thong tin ca nhan */
+  .container1 {
+    display: grid;
+    grid-template-columns: 100%;
+    justify-items: center;
+  }
+  .personal-info {
+    margin-right: 250px !important;
+    margin-left: 40px;
+  }
+  /* layout 6 */
+  .work-container {
+    display: grid;
+    grid-template-columns: 1fr !important;
+    margin-left: 40px !important;
+  }
+  /* reward */
+  .reward .container {
+    justify-items: center;
+    padding: 30px 0;
+  }
+  .reward-container {
+    display: flex;
+    flex-direction: column;
+    padding: 0;
+    border-bottom: 1px solid red;
+    margin-bottom: 20px;
+  }
+  .reward-box {
+    display: flex;
+    flex-direction: column;
+  }
+  .bottom {
+    border-bottom: 1px solid red;
+    margin-bottom: 20px;
+  }
+  .left {
+    border-left: none;
+    padding: 0;
+  }
+  .reward-img3 {
+    margin: 0;
+    width: fit-content;
+  }
+  /* project */
+  .project .container {
+    margin-left: 100px;
+    padding: 30px 0;
+  }
+  .project-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-right: 200px;
+  }
+}
