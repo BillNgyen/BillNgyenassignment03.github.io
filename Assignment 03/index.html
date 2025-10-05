@@ -1,0 +1,495 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Bootstrap -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+
+    <!-- Link css -->
+    <link rel="stylesheet" href="css/font.css" />
+    <link rel="stylesheet" href="css/laptop.css" />
+    <link rel="stylesheet" href="css/mobile.css" />
+    <link rel="stylesheet" href="css/tablet.css" />
+
+    <title>Assignment03</title>
+  </head>
+  <body>
+    <!-- banner -->
+    <div class="banner">
+      <div class="banner-text">
+        <h1>Truong The K</h1>
+        <span>Fullstack developer</span>
+      </div>
+    </div>
+    <!-- navbar -->
+    <section class="navbar">
+      <nav class="container">
+        <div class="nav-item">
+          <a class="nav-box" href="#"
+            ><i class="btn icon-user text-primary"></i>THÔNG TIN</a
+          >
+        </div>
+        <div class="nav-item">
+          <a class="nav-box" href="#"
+            ><i class="btn icon-doc-text-inv text-primary"></i>LÝ LỊCH</a
+          >
+        </div>
+        <div class="nav-item logo">
+          <div class="avatar">
+            <img src="images/default-avatar.jpg" alt="avatar" />
+          </div>
+        </div>
+
+        <div class="nav-item">
+          <a class="nav-box" href="#"
+            ><i class="btn icon-mail-alt text-primary"></i>CHỨNG CHỈ</a
+          >
+        </div>
+        <div class="nav-item">
+          <a class="nav-box" href="digital-cv.html" target="_blank"
+            ><i class="btn icon-star-1 text-primary"></i>DỰ ÁN</a
+          >
+        </div>
+      </nav>
+    </section>
+    <!-- Thong tin ca nhan -->
+    <section class="container1">
+      <div class="background1">
+        <div class="personal-info">
+          <div class="personal-goal"><h2>Mục tiêu nghề nghiệp</h2></div>
+          <p class="personal-text">
+            Là một sinh viên đã hoàn thành chương trình chứng chỉ Doanh Nghiệp
+            của FUNiX. Em mong muốn mình sẽ đi làm việc với vị trí Fullstack
+            Developer, có thể vận dụng những kiến thức đã được trau dồi và không
+            ngừng học hỏi phát triển bản thân, cũng như hoàn thành tốt nhất công
+            việc được giao.
+          </p>
+        </div>
+      </div>
+      <div class="background2">
+        <div class="personal-info">
+          <div class="personal-goal"><h2>Thông tin cá nhân</h2></div>
+
+          <!-- Form email-->
+          <div id="email-container" class="enter">
+            <form id="email-form">
+              <input type="email" id="email" placeholder="Enter email" />
+              <p id="error-email" class="check">Hãy nhập email để xác thực</p>
+              <p id="alert" class="text-danger"></p>
+              <button type="button" class="btn btn-primary" id="submit">
+                Submit
+              </button>
+            </form>
+          </div>
+          <!-- Thong tin -->
+          <div id="personal-info" class="hidden">
+            <p class="personal-text2">
+              <strong>Gioi tinh:</strong> Nam <br />
+              <strong>Ngày sinh:</strong> 29/7/1999 <br />
+              <strong>Điện thoại:</strong> 0345316xxx <br />
+              <strong>Email:</strong> khangttfx73822@funix.edu.vn
+              <br />
+              <strong>Địa chỉ:</strong> Số 10, số 10, TP. HCM <br />
+              <strong>Website:</strong> https://abc.tech <br />
+            </p>
+            <ul class="personal-icon">
+              <i class="icon-twitter icon"></i>
+              <i class="icon-facebook icon"></i>
+              <i class="icon-instagram icon"></i>
+              <i class="icon-linkedin icon"></i>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- layout 6 cục -->
+    <section class="work-container">
+      <!-- thông tin nghề nghiệp -->
+      <div class="work-info">
+        <div class="work-title">
+          <h1>Kinh nghiệm <i class="ic-toolbox work-icon"></i></h1>
+          <button class="view hidden bg-warning">▼ View More</button>
+          <div id="work-item" class="work-item hidden display-info">
+            <ul class="work-item-ul">
+              <div class="work-div">
+                <li class="li-span">
+                  <h3>Cong ty y</h3>
+                  <br />
+                  5/2022 - <span> NOW</span> <br />
+                </li>
+                <li class="work-li-text">- Fullstack developer</li>
+                <li class="work-li-text">
+                  - Xây dựng, phát triển Website dựa trên thiết kế và yêu cầu đã
+                  có.
+                </li>
+                <li class="work-li-text">
+                  - Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Itaque praesentium ipsum eum omnis aperiam magni eaque iure.
+                </li>
+              </div>
+              <li><h3>Cong ty x</h3></li>
+              <li class="work-li-text">- Lorem, ipsum dolor sit amet .</li>
+              <li class="work-li-text">- Lorem, ipsum dolor sit amet .</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <!-- học vấn -->
+      <div class="work-info">
+        <div class="work-title">
+          <h1>Học vấn<i class="ic-pencil work-icon"></i></h1>
+          <button class="view hidden bg-warning">▼ View More</button>
+          <div id="work-item" class="work-item hidden display-info">
+            <ul class="work-item-ul">
+              <div class="work-div">
+                <li class="li-span">
+                  <h3>FUNiX</h3>
+                  <br />
+                  2025 - 2027 <br />
+                </li>
+                <li class="work-li-text">- Fullstack developer</li>
+                <li class="work-li-text">
+                  - Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Itaque praesentium ipsum eum o
+                </li>
+              </div>
+              <li><h3>Cong ty x</h3></li>
+              <li class="work-li-text">- Lorem, ipsum dolor sit</li>
+              <li class="work-li-text">- Lorem, ipsum dolor sit ame</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <!-- hoạt động -->
+      <div class="work-info">
+        <div class="work-title">
+          <h1>Hoạt động <i class="ic-toolbox work-icon"></i></h1>
+          <button class="view hidden bg-warning">▼ View More</button>
+          <div id="work-item" class="work-item hidden display-info">
+            <ul class="work-item-ul">
+              <div class="work-div">
+                <li class="li-span">
+                  <h3>Trường</h3>
+                  <br />
+                  5/2022 - 2027 <br />
+                </li>
+                <li class="work-li-text">- Fullstack developer</li>
+
+                <li class="work-li-text">
+                  - Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Itaque praesentium ipsum eum omnis.
+                </li>
+              </div>
+              <li><h3>Cong ty x</h3></li>
+              <li class="work-li-text">
+                - Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+              </li>
+              <li class="work-li-text">
+                - Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <!-- sở thính -->
+      <div class="work-info">
+        <div class="work-title">
+          <h1>Sở thích <i class="ic-telescope work-icon"></i></h1>
+        </div>
+        <button class="view hidden bg-warning">▼ View More</button>
+        <div id="work-item" class="hobbies-list hidden display-info">
+          <div class="hobby-item">
+            <div class="icon">
+              <i class="ic-megaphone work-icon2"></i>
+            </div>
+            <p>Âm nhạc</p>
+          </div>
+
+          <div class="hobby-item">
+            <div class="icon">
+              <i class="ic-strategy work-icon2"></i>
+            </div>
+            <p>Chơi game</p>
+          </div>
+
+          <div class="hobby-item">
+            <div class="icon">
+              <i class="ic-hotairballoon work-icon2"></i>
+            </div>
+            <p>Du lịch</p>
+          </div>
+
+          <div class="hobby-item">
+            <div class="icon">
+              <i class="ic-basket work-icon2"></i>
+            </div>
+            <p>Nấu ăn</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- ngôn ngữ -->
+      <div class="work-info">
+        <div class="work-title">
+          <h1>Ngôn ngữ <i class="ic-mic work-icon"></i></h1>
+          <button class="view hidden bg-warning">▼ View More</button>
+          <div id="work-item" class="work-info-con hidden display-info">
+            <div class="skill">
+              <p>Tiếng Anh - IELTS 6.5</p>
+
+              <span class="blue"></span>
+              <span class="blue"></span>
+              <span></span>
+            </div>
+            <div class="skill">
+              <p>Tiếng Nhật - JLPT N5</p>
+
+              <span class="blue"></span>
+              <span class="blue"></span>
+              <span></span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- kỹ năng -->
+      <div class="work-info">
+        <div class="work-title">
+          <h1>Kỹ năng <i class="ic-tools-2 work-icon"></i></h1>
+          <button class="view hidden bg-warning">▼ View More</button>
+          <div id="work-item" class="work-info-con hidden display-info">
+            <div class="skill">
+              <p>HTML/CSS: Fundamental</p>
+              <span class="blue"></span>
+              <span class="blue"></span>
+              <span></span>
+            </div>
+            <div class="skill">
+              <p>JavaScript: Beginner</p>
+              <span class="blue"></span>
+              <span class="blue"></span>
+              <span></span>
+            </div>
+            <div class="skill">
+              <p>NodeJS: Beginner</p>
+              <span class="blue"></span>
+              <span class="blue"></span>
+              <span></span>
+            </div>
+            <div class="skill">
+              <p>Bootstrap 5: Beginner</p>
+              <span class="blue"></span>
+              <span class="blue"></span>
+              <span></span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Chứng chỉ -->
+    <section class="reward">
+      <div class="container">
+        <h1 class="section-title">Chứng chỉ - Giải thưởng</h1>
+
+        <div class="reward-container">
+          <div class="reward-box bottom">
+            <img src="images/Cert_DBI.png" alt="Chứng chỉ Web" />
+
+            <div class="reward-text">
+              <h2>CHỨNG CHỈ LẬP TRÌNH WEB - FUNIX</h2>
+              <ul class="reward-ul">
+                <li>- Chứng chỉ thuộc chương trình CCDN</li>
+                <li>- GPA: 8.6</li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="reward-box left">
+            <img src="images/Cert_PRF.png" alt="Chứng chỉ JavaScript" />
+            <div class="reward-text">
+              <h2>CHỨNG CHỈ LẬP TRÌNH JAVASCRIPT - FUNIX</h2>
+              <ul class="reward-ul">
+                <li>- Chứng chỉ thuộc chương trình CCDN</li>
+                <li>- GPA: 8.9</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <div class="reward-box reward-img3 bottom">
+          <img src="images/Cert_WEB.png" alt="Chứng chỉ Database" />
+          <div class="reward-text">
+            <h2>CHỨNG CHỈ THIẾT KẾ DATABASE - FUNiX</h2>
+            <ul class="reward-ul">
+              <li>- Chứng chỉ thuộc chương trình CCDN</li>
+              <li>- GPA: 8.0</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Dự án -->
+    <section class="project">
+      <div class="container">
+        <h2>Dự án</h2>
+
+        <div class="project-container">
+          <!-- Project 1 -->
+          <div class="project-info">
+            <div class="project-title">
+              <img src="images/project_1.png" alt="project-1" />
+              <h3>CV CÁ NHÂN</h3>
+            </div>
+            <div class="border">
+              <div class="project-title">
+                <div class="project-icon">
+                  <span class="year">2025</span>
+                  <p><i class="icon-user-1 icon"></i>FUNIX</p>
+                  <p><i class="icon-lamp icon"></i>Developer</p>
+                </div>
+              </div>
+              <div class="project-title">
+                <div class="project-info-text">
+                  <p>Hoạt động</p>
+                  <div class="project-text">
+                    Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                  </div>
+                </div>
+              </div>
+              <div class="project-title">
+                <div class="project-info-text">
+                  <p>Hoạt động</p>
+                  <div class="project-text">
+                    Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                  </div>
+                </div>
+              </div>
+              <div class="project-title">
+                <div class="project-info-text">
+                  <p>Hoạt động</p>
+                  <div class="project-text">
+                    Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Project 2 -->
+          <div class="project-info">
+            <div class="project-title">
+              <img src="images/project_2.png" alt="project-1" />
+              <h3>TRANG WEB QUẢN LÝ THÚ CƯNG</h3>
+            </div>
+            <div class="project-title">
+              <div class="project-icon">
+                <span class="year">2025</span>
+                <p><i class="icon-user-1 icon"></i>FUNIX</p>
+                <p><i class="icon-lamp icon"></i>Developer</p>
+              </div>
+            </div>
+            <div class="project-title">
+              <div class="project-info-text">
+                <p>Hoạt động</p>
+                <div class="project-text">
+                  Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                </div>
+              </div>
+            </div>
+            <div class="project-title">
+              <div class="project-info-text">
+                <p>Hoạt động</p>
+                <div class="project-text">
+                  Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                </div>
+              </div>
+            </div>
+            <div class="project-title">
+              <div class="project-info-text">
+                <p>Hoạt động</p>
+                <div class="project-text">
+                  Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Project 3 -->
+          <div class="project-info">
+            <div class="project-title">
+              <img src="images/project_3.png" alt="project-1" />
+              <h3>TRANG WEB XEM TIN TỨC</h3>
+            </div>
+            <div class="project-title">
+              <div class="project-icon">
+                <span class="year">2025</span>
+                <p><i class="icon-user-1 icon"></i>FUNIX</p>
+                <p><i class="icon-lamp icon"></i>Developer</p>
+              </div>
+            </div>
+            <div class="project-title">
+              <div class="project-info-text">
+                <p>Hoạt động</p>
+                <div class="project-text">
+                  Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                </div>
+              </div>
+            </div>
+            <div class="project-title">
+              <div class="project-info-text">
+                <p>Hoạt động</p>
+                <div class="project-text">
+                  Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                </div>
+              </div>
+            </div>
+            <div class="project-title">
+              <div class="project-info-text">
+                <p>Hoạt động</p>
+                <div class="project-text">
+                  Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- footer -->
+    <footer>
+      <div class="social-icons">
+        <a
+          href="https://www.facebook.com"
+          target="_blank"
+          class="footer-icon facebook"
+        >
+          <i class="icon-facebook footer-icon-icon"></i> Facebook
+        </a>
+        <a
+          href="https://www.linkedin.com"
+          target="_blank"
+          class="footer-icon linkedin"
+        >
+          <i class="icon-linkedin footer-icon-icon"></i> Linkedin
+        </a>
+        <a href="https://github.com" target="_blank" class="footer-icon github">
+          <i class="icon-github-circled footer-icon-icon"></i> Github
+        </a>
+      </div>
+    </footer>
+    <script src="script.js"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

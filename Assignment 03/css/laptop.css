@@ -1,0 +1,364 @@
+* {
+  padding: 0px;
+  margin: 0px;
+  box-sizing: border-box;
+}
+body {
+  font-family: "inter", sans-serif;
+}
+
+img {
+  width: 100%;
+  height: 100%;
+
+  display: block;
+}
+section > .container {
+  padding: 30px 10px;
+}
+/* banner */
+.banner {
+  position: relative;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.6)), url(/images/banner.jpg);
+  background-size: cover;
+  height: 48vh;
+}
+.banner-text {
+  position: absolute;
+  display: grid;
+  gap: 5px;
+  justify-items: center;
+  color: white;
+  top: 30%;
+  left: 48%;
+  transform: translate(-50%, -50%);
+}
+
+.banner span {
+  font-size: 15px;
+  opacity: 0.8;
+}
+
+/* navbar */
+.navbar {
+  text-align: center;
+  border-top: 3px solid #ddd;
+  border-bottom: 3px solid #ddd;
+}
+.navbar .container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0;
+}
+.nav-item {
+  border-right: 2px solid #ddd;
+}
+.nav-item:first-child {
+  border-left: 2px solid #ddd;
+}
+.nav-box {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #000;
+  text-decoration: none;
+  padding: 10px 20px;
+}
+.nav-box:hover {
+  background-color: #ddd;
+}
+.logo {
+  width: 200px;
+  position: relative;
+  align-self: stretch;
+}
+.avatar {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 200px;
+  height: 200px;
+  /* Để cho banner-text ở giữa img */
+  transform: translate(-50%, -50%);
+  color: white;
+  /* Để màu của text trắng dễ nhìn trên img */
+}
+.avatar img {
+  border: 20px solid white;
+  border-radius: 50%;
+}
+
+/* Thong tin ca nhan */
+.container1 {
+  display: grid;
+  grid-template-columns: 50% 50%;
+}
+.personal-info {
+  margin-left: 100px;
+  margin-right: 200px;
+}
+.personal-info ul {
+  padding: 0;
+}
+.personal-goal {
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+.background1 {
+  background-color: #ddd;
+}
+.background2 {
+  background-color: #f1f1f1;
+}
+
+/* Grid Layout và tạo ra 3 cột dọc (mỗi cột chiếm 1/3 màn hình), sau đó sử dụng thuộc tính border để thêm viền cho mỗi phần. */
+.work-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(2, auto);
+  gap: 50px;
+  margin-left: 280px;
+  margin-right: 280px;
+  padding: 30px 10px;
+}
+.work-info {
+  border: 1px solid #ddd;
+  padding: 20px;
+}
+.work-title h1 {
+  display: grid;
+  grid-template-columns: 75% 25%;
+  font-weight: 700;
+  margin-left: 20px;
+  margin-right: 2px;
+}
+.work-title {
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+.li-span span {
+  background-color: #199cdb;
+  margin: 5px;
+  border-radius: 5px;
+  padding: 5px;
+  font-style: italic;
+  color: white;
+}
+.work-item-ul {
+  margin-top: 60px;
+}
+.work-item li {
+  margin-left: 30px;
+  margin-right: 30px;
+}
+/* style cho các individual list màu xanh */
+li::marker {
+  color: #199cdb;
+  font-size: 35px;
+}
+/* style cho các text ở trong ul */
+.work-li-text {
+  list-style-type: none;
+  margin-top: 20px;
+  color: #888888;
+}
+/* style các icon cách bằng nhau và ngang */
+.hobbies-list {
+  display: flex;
+  justify-content: space-evenly;
+}
+/* align các text ở giữa */
+.hobby-item {
+  text-align: center;
+}
+.hobby-item .icon {
+  width: 60px;
+  height: 60px;
+  border: 2px solid #00aaff;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 5px;
+}
+.hobby-item i {
+  font-size: 30px;
+}
+.hobby-item p {
+  font-size: 15px;
+  opacity: 0.6;
+}
+.skill {
+  margin: 35px;
+  margin-left: 40px;
+}
+
+.skill p {
+  margin-bottom: 10px;
+  font-size: 20px;
+  font-weight: 600;
+}
+.skill span {
+  width: 45px;
+  display: inline-block;
+  border-bottom: 4px solid gray;
+}
+.skill .blue {
+  border-bottom-color: blue;
+}
+
+/* Chung chi-giai thuong */
+.reward h1 {
+  margin-bottom: 30px;
+}
+.reward {
+  background-color: #e6e6e6;
+}
+.reward h1 {
+  margin-bottom: 20px;
+}
+.reward-container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  border-bottom: 1px solid #cfa43e;
+  padding-bottom: 50px;
+  padding-top: 20px;
+}
+.reward-box {
+  display: grid;
+  grid-template-columns: 40% 55%;
+  gap: 5%;
+}
+.reward-box img {
+  width: 100%;
+  height: auto;
+}
+.reward-text h2 {
+  font-size: 15px;
+  padding-bottom: 10px;
+}
+.left {
+  padding-left: 20px;
+  border-left: 1px solid #cfa43e;
+}
+.reward-img3 {
+  margin-top: 50px;
+  width: 50%;
+}
+.reward-ul {
+  list-style-type: none;
+}
+
+/* Du an */
+
+.project h2 {
+  margin-bottom: 30px;
+  font-size: 30px;
+}
+.project-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+  opacity: 0.7;
+}
+.project-info {
+  border: 1px solid #888888;
+}
+
+.project-title {
+  border-top: 1px solid #888888;
+}
+
+.project-title h3 {
+  font-size: 18px;
+  padding: 10px 0 5px 10px;
+  border-top: 1px solid #888888;
+}
+
+.project-title .project-info-text {
+  display: grid;
+  grid-template-columns: 30% 70%;
+  margin-left: 25px;
+  margin-right: 25px;
+  margin-top: 10px;
+  padding-bottom: 5px;
+}
+.project-icon {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+  padding: 13px;
+  font-size: 14px;
+}
+
+.project-icon span {
+  padding: 6px 15px;
+  background-color: #199cdb;
+  color: white;
+  border-radius: 80px;
+}
+.project-icon p {
+  margin: 0;
+}
+
+/* footer */
+footer {
+  background-color: #f1f1f1;
+  padding: 60px 0;
+  text-align: center;
+}
+
+.social-icons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+}
+
+.footer-icon {
+  text-decoration: none;
+  display: flex;
+  color: #707070;
+  align-items: center;
+  font-size: 100%;
+}
+
+.footer-icon:hover {
+  color: #0056b3;
+}
+
+.footer-icon-icon {
+  border-radius: 50%;
+  padding: 5%;
+  color: white;
+  background-color: #0d8ddb;
+  margin-right: 10px;
+}
+
+/* Hidden */
+.hidden {
+  display: none;
+}
+
+/* email */
+#email-form {
+  display: block;
+  margin-bottom: 20px;
+}
+
+#email-form p {
+  font-size: 70%;
+  margin-top: 2px;
+  opacity: 0.7;
+}
+
+/* View btn */
+.view {
+  border-radius: 200px;
+  width: 40%;
+  padding: 10px;
+  font-weight: 900;
+  margin-left: 10%;
+  margin-top: 3%;
+}
